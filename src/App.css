@@ -1,38 +1,56 @@
-.App {
+
+.img-container{
+  overflow: hidden;
+  background-color: #f50101;
+  border-radius: 30px;
+}
+.card-img-top{
+  /* background-color: #f50101;
+  border-radius: 30px;
+  box-shadow: #f50101; */
+  transition: transform 0.3s;
+  width: 100%;
+  
+}
+.card-img-top:hover{
+  background-color: #f17108;
+ 
+  transform: scale(1.1);
+}
+.card{
+  border-radius: 30px;
+  border: 1px solid #f50101;
+ 
+}
+.card-text strong{
+  color: #2cdd2b;
+  font-size: 22px
+}
+.btn{
+  border-radius: 50px;
+  background-color: #f50101;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: -10px;
+
+}
+.price{
+  display: flex;
+  align-items: center;
   text-align: center;
+  margin-top: -5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.price p{
+  flex: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-body{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-rated .img-container {
+  width: 200px;
 }
