@@ -69,8 +69,12 @@ function App() {
 
 
 {/* **************************top rated************************************* */}
-<div className='row mt-6'>
-  <h1>Top Rated Products</h1>
+<div className="row">
+<h1 className="mt-5">Top Rated Products</h1>
+  <div className="divider"></div>
+</div>
+
+<div className="row mt-6">
   {products.map((product) => (
     <div key={product.id} className="col-lg-6 col-md-4 col-sm-6 col-12 mt-4">
       <div className="card top-rated">
@@ -100,15 +104,6 @@ function App() {
 
 
 {/* *************************************************************** */}
-
-
-
-
-
-
-
-
-
 
     </div>
   );

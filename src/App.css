@@ -4,15 +4,12 @@
   background-color: #f50101;
   border-radius: 30px;
 }
-.card-img-top{
-  /* background-color: #f50101;
-  border-radius: 30px;
-  box-shadow: #f50101; */
+.card-img-top , .card-img{
   transition: transform 0.3s;
   width: 100%;
   
 }
-.card-img-top:hover{
+.card-img-top:hover , .card-img:hover{
   background-color: #f17108;
  
   transform: scale(1.1);
@@ -53,4 +50,11 @@
 
 .top-rated .img-container {
   width: 200px;
+}
+.divider{
+  width: 345px;
+  height: 2px;
+  
+  background: #4a4a4a;
+  margin-left: 17px;
 }
