@@ -42,6 +42,8 @@ function App() {
     },
 
   ];
+  // Sort the products by rating in descending order
+  const topRatedProducts = [...products].sort((a, b) => b.rating - a.rating).slice(0, 3);
 
   return (
     <div className="container mt-4">
@@ -75,14 +77,14 @@ function App() {
 </div>
 
 <div className="row mt-6">
-  {products.map((product) => (
+  {topRatedProducts.map((product) => (
     <div key={product.id} className="col-lg-6 col-md-4 col-sm-6 col-12 mt-4">
       <div className="card top-rated">
         <div className="row no-gutters">
          
           <div className="col-md-6">
             <div className='img-container'>
-              <img src={product.img} className="card-img" alt="..." />
+              <img src={product.img} className="card-img" alt={product.title} />
             </div>
           </div>
          
@@ -90,6 +92,7 @@ function App() {
             <div className="card-body">
               <h5 className="card-title">{product.title}</h5>
               <p className="card-text">{product.description}</p>
+              <p>Rating: {product.rating}</p>
               <div className='price'>
               <p className="card-text"><strong>Rs.{product.price}</strong></p>
               <a href="#" className="btn btn-primary"> <i class="fa fa-plus" aria-hidden="true"></i> Add to Cart</a>
