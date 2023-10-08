@@ -72,7 +72,7 @@ function App() {
 <div className='row mt-6'>
   <h1>Top Rated Products</h1>
   {products.map((product) => (
-    <div key={product.id} className="col-lg-6 col-md-4 col-sm-6 col-12">
+    <div key={product.id} className="col-lg-6 col-md-4 col-sm-6 col-12 mt-4">
       <div className="card top-rated">
         <div className="row no-gutters">
          
@@ -87,7 +87,7 @@ function App() {
               <h5 className="card-title">{product.title}</h5>
               <p className="card-text">{product.description}</p>
               <div className='price'>
-              <p className="card-text"><strong>{product.price}</strong></p>
+              <p className="card-text"><strong>Rs.{product.price}</strong></p>
               <a href="#" className="btn btn-primary"> <i class="fa fa-plus" aria-hidden="true"></i> Add to Cart</a>
               </div>
             </div>
