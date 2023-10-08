@@ -4,8 +4,6 @@ import './App.css';
 
 
 
-
-
 function App() {
   const products = [
     {
@@ -46,7 +44,7 @@ function App() {
   const topRatedProducts = [...products].sort((a, b) => b.rating - a.rating).slice(0, 3);
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4"  style={{ fontFamily: 'Rajdhani, sans-serif' }}>
       <div className="row">
         {products.map((product) => (
           <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 col-12">
