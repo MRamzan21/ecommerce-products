@@ -47,7 +47,7 @@ function App() {
     <div className="container mt-4"  style={{ fontFamily: 'Rajdhani, sans-serif' }}>
       <div className="row">
         {products.map((product) => (
-          <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div key={product.id} className="col-lg-3 col-md-6 col-sm-6 col-12">
             <div className="card text-center mt-2">
               <div className='img-container'>
                 <img src={product.img} className="card-img-top" alt={product.title} />
@@ -76,17 +76,17 @@ function App() {
 
 <div className="row mt-6">
   {topRatedProducts.map((product) => (
-    <div key={product.id} className="col-lg-6 col-md-4 col-sm-6 col-12 mt-4">
+    <div key={product.id} className="col-lg-6 col-md-12 col-sm-12 mt-4">
       <div className="card top-rated">
         <div className="row no-gutters">
          
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-6 col-sx-6">
             <div className='img-container'>
               <img src={product.img} className="card-img" alt={product.title} />
             </div>
           </div>
          
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-6 col-sx-6 mt-4">
             <div className="card-body">
               <h5 className="card-title">{product.title}</h5>
               <p className="card-text">{product.description}</p>
